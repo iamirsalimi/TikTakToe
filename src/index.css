@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.square[id="0"]{
+  border : 3px solid rgb(14 , 165 , 233);
+  border-left:transparent;
+  border-top:transparent;
+  @apply rounded-tl-md;
+}
+
+.square[id="1"]{
+  border-bottom : 3px solid rgb(14 , 165 , 233);
+}
+
+.square[id="2"]{
+  border : 3px solid rgb(14 , 165 , 233);
+  border-right:transparent;
+  border-top:transparent;
+  @apply rounded-tr-md;
+}
+
+.square[id="3"]{
+  border-right : 3px solid rgb(14 , 165 , 233);
+}
+
+.square[id="5"]{
+  border-left : 3px solid rgb(14 , 165 , 233);
+}
+
+.square[id="6"]{
+  border : 3px solid rgb(14 , 165 , 233);
+  border-left:transparent;
+  border-bottom:transparent;
+  @apply rounded-bl-md;
+}
+
+.square[id="7"]{
+  border-top : 3px solid rgb(14 , 165 , 233);
+}
+
+.square[id="8"]{
+  border : 3px solid rgb(14 , 165 , 233);
+  border-right:transparent;
+  border-bottom:transparent;
+  @apply rounded-br-md;
+}
+
+.circle {
+  @apply w-[90px] h-[90px] border-[18px] border-blue-500 rounded-full;
+}
+
+.cross {
+  @apply w-[90px] h-[90px] relative;
+}
+
+.cross::before,
+.cross::after {
+  content:"";
+  @apply bg-red-600 rounded-md absolute rotate-45;
+}
+
+.cross::before {
+  width:30%;
+  height:100%;
+  left:50%;
+  margin-left:-15%;
+}
+
+.cross::after {
+  width:100%;
+  height:30%;
+  top:50%;
+  margin-top:-15%;
+}
