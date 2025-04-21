@@ -1,6 +1,6 @@
 ## About Project
 
-Simple Tik Tak Toe Game developed By react js and tailwind css
+Simple Tik Tak Toe Game developed By React js and Tailwind css
 
 ## Project Link
 
